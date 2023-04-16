@@ -20,12 +20,12 @@
         <a class="logo" href="./index.html">Web<span class="logo-link, studio-top">Studio</span></a>
         <ul class="navigation">
           <li>
-            <a class="link" href="./index.html">Agencja</a>
+            <a class="nav-element" href="./index.html">Agencja</a>
           </li>
           <li>
-            <a class="link" href="./portfolio.html">Portfolio</a>
+            <a class="nav-element is-active" href="./portfolio.html">Portfolio</a>
           </li>
-          <li><a class="link" href="#">Kontakt</a></li>
+          <li><a class="nav-element" href="#">Kontakt</a></li>
         </ul>
       </nav>
       <ul class="contacts">
@@ -62,11 +62,19 @@
       <div class="container">
         <ul class="examples-grid">
           <li class="examples">
-            <img class="examples-img" src="images/website.jpg" alt="Strona internetowa" width="370" height="294" />
-            <figcaption class="photos-description">
+            <div class="img-box">
+              <img class="examples-img" src="images/website.jpg" alt="Strona internetowa" width="370" height="294" />
+              <div class="overlay-box">
+                <p class="overlay-content">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                  koronawirusa. Firmy
+                  wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.
+                </p>
+              </div>
+            </div>
+            <div class="photos-description">
               <h3 class="examples-name">Technocrack</h3>
               <p class="examples-type">Strona internetowa</p>
-            </figcaption>
+            </div>
           </li>
           <li class="examples">
             <img class="examples-img" src="images/basketball.jpg" alt="Grafika" width="370" height="294" />

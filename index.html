@@ -20,12 +20,12 @@
         <a class="logo" href="./index.html">Web<span class="logo-link, studio-top">Studio</span></a>
         <ul class="navigation">
           <li>
-            <a class="link" href="./index.html">Agencja</a>
+            <a class="nav-element is-active" href="./index.html">Agencja</a>
           </li>
           <li>
-            <a class="link" href="./portfolio.html">Portfolio</a>
+            <a class="nav-element" href="./portfolio.html">Portfolio</a>
           </li>
-          <li><a class="link" href="#">Kontakt</a></li>
+          <li><a class="nav-element" href="#">Kontakt</a></li>
         </ul>
       </nav>
       <ul class="contacts">
@@ -52,7 +52,12 @@
     <section class="section hero">
       <div class="container">
         <h1 class="hero-slogan">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="hero-button" type="button">Zamów usługe</button>
+        <button class="hero-button" type="button" data-modal-open>Zamów usługe</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close-btn" type="button" data-modal-close>X</button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section">
@@ -114,13 +119,22 @@
         <h2 class="duties-title">Czym się zajmujemy</h2>
         <ul class="duties-list">
           <li>
-            <img src="images/programming.jpg" alt="Programowanie" width="370" height="294" />
+            <div class="img-with-title"><img src="images/programming.jpg" alt="Programowanie" width="370"
+                height="294" />
+              <figcaption class="img-title">APLIKACJE KOMPUTEROWE</figcaption>
+            </div>
           </li>
           <li>
-            <img src="images/smartphone.jpg" alt="Aplikacje mobilne" width="370" height="294" />
+            <div class="img-with-title">
+              <img src="images/smartphone.jpg" alt="Aplikacje mobilne" width="370" height="294" />
+              <figcaption class="img-title">APLIKACJE MOBILNE</figcaption>
+            </div>
           </li>
           <li>
-            <img src="images/tablet.jpg" alt="Projektowanie stron" width="370" height="294" />
+            <div class="img-with-title">
+              <img src="images/tablet.jpg" alt="Projektowanie stron" width="370" height="294" />
+              <figcaption class="img-title">ROZWIĄZANIA GRAFICZNE</figcaption>
+            </div>
           </li>
         </ul>
       </div>
@@ -361,6 +375,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
